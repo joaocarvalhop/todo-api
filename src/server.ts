@@ -1,5 +1,6 @@
 import express from "express";
 import { router } from "./routes";
+import startDB from "./db/conn"
 import { errorHandler } from "./middlewares/error-handler";
 
 const app = express();
@@ -7,6 +8,8 @@ const app = express();
 app.use(express.json());
 
 app.use("/api", router);
+
+startDB().catch(err => console.log(err));
 
 app.use(errorHandler);
 
