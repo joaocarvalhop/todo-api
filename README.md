@@ -1,4 +1,4 @@
-# TODO API
+# To-Do List - API
 
 ## Descrição
 Projeto desenvolvido com TypeScript e Express/Node.js para gerenciar tarefas.
